@@ -1,3 +1,4 @@
+/*********************First part, adding li on click or keypress***************/
 
 var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
@@ -30,12 +31,32 @@ button.addEventListener("click", buttonClick);
 
 input.addEventListener("keypress", keyPress);
 
+/****************************Line through--style ******************************/
 
-
+var li = document.querySelectorAll("li");
+////for loop
 /*
-var li = document.querySelector("li");
-
-li.addEventListener("click", function(){
-  li.classList.toggle("done");
-})
+for (var i = 0; i < li.length; i++) {
+  li[i].addEventListener("click", function(){
+    this.classList.toggle("done");
+  })
+}
 */
+
+//// forEach method, same stuff
+li.forEach(function(value, index) {
+  li[index].addEventListener("click", function(){
+    this.classList.toggle("done");
+  })
+})
+
+/**********************Remove on click*****************************************/
+
+var rbutton = document.querySelectorAll(".remove");
+
+rbutton.forEach(function(value, index) {
+  rbutton[index].addEventListener("click", function(){
+    this.previousElementSibling.remove();
+    this.remove();
+  })
+})
