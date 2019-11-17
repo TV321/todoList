@@ -77,6 +77,10 @@ p{
   cursor: pointer;
 }
 
+#enter:focus{
+  outline: none;
+}
+
 li{
   display: inline-block;
   list-style: none;
