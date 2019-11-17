@@ -1,4 +1,4 @@
-/*********************First part, adding li on click or keypress***************/
+/*********************Adding li on click or keypress***************************/
 
 var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
@@ -16,7 +16,7 @@ function createLi(){
   li.appendChild(document.createTextNode(input.value));
   //create Button
   var removeButton = document.createElement("button");
-  removeButton.appendChild(document.createTextNode("Remove button"));
+  removeButton.appendChild(document.createTextNode("X"));
   removeButton.classList.add("remove");
   //createDiv
   var div = document.createElement("div");
