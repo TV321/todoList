@@ -67,8 +67,9 @@ p{
   border: 3px solid #1e1d1d;
   border-radius: 0 10px 10px 0;
   background-color: #343232;
-  color: #1e1d1d;
-  transition: all 0.6s linear;
+  color: #999595;
+  /*color: #1e1d1d;*/
+  transition: all 0.4s linear;
   font-size: 20px;
 }
 
